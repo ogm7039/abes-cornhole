@@ -1,9 +1,7 @@
-// app/rules/page.tsx
 'use client';
 
 import { Accordion, ListGroup } from 'react-bootstrap';
-import { URL } from 'url';
-import AccordionBody from '../../../node_modules/react-bootstrap/esm/AccordionBody';
+
 
 export default function RulesPage() {
   return (
