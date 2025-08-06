@@ -90,7 +90,7 @@ export default function RulesPage() {
                     <Accordion.Body>
                         <li>Winning team gets 2 points no matter what.</li>
                         <li>If a team forces a game three, they will be awarded 1 point.</li>
-                        <li>(Think of it as similar to the NHL’s 1 point for overtime losses).</li>
+                        <li>Think of it as similar to the NHL’s 1 point for overtime losses.</li>
                     </Accordion.Body>
                 </Accordion.Item>
                 <Accordion.Item eventKey="1">
@@ -110,7 +110,7 @@ export default function RulesPage() {
           <Accordion.Body>
             <Accordion alwaysOpen>
                 <Accordion.Item eventKey="0">
-                    <Accordion.Header>Each team will make playoffs.</Accordion.Header>
+                    <Accordion.Header>Each team will make playoffs</Accordion.Header>
                     <Accordion.Body>
                             <li>Just like all the sports we've played, we'll still get participation trophies.</li>
                     </Accordion.Body>
