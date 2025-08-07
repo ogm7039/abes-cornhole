@@ -1,20 +1,21 @@
 import Card from 'react-bootstrap/Card';
 
 type ScheduleWeekProps = {
-    games: {
-      home: string;
-      away: string;
-      homeScore: string | null;
-      awayScore: string | null;
-    }[];
-    weekNumber: number;
-  };
+  date: string;
+  games: {
+    home: string;
+    away: string;
+    homeScore: string | null;
+    awayScore: string | null;
+  }[];
+  weekNumber: number;
+};
 
-export default function ScheduleWeek({ games, weekNumber }: ScheduleWeekProps) {
+export default function ScheduleWeek({ games, weekNumber, date }: ScheduleWeekProps) {
     return (
       <Card className="mb-4">
         <Card.Body>
-            <Card.Title>Week {weekNumber} Schedule</Card.Title>
+            <Card.Title>Week {weekNumber} ({date})</Card.Title>
             <Card.Text>
                 {games.map((game, i) => (
                     <div key={i}>
