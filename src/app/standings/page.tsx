@@ -1,5 +1,6 @@
 "use client"
 
+import { Container } from "@/components/bootstrap";
 import StandingsEntry from "./standingsEntry";
 
 export default function Standings() {
@@ -16,8 +17,8 @@ export default function Standings() {
 
     return(
         <div>
-        <h2 className="text-center mb-4">Standings</h2>
-            <table className="table table-striped table-fixed">
+            <h2 className="text-center mb-4">Standings</h2>
+            <table className="table table-striped table-fixed table-bordered">
                 <thead>
                     <tr>
                         <th className="text-center w-10">
