@@ -18,7 +18,7 @@ export default function ScheduleWeek({ games, weekNumber }: ScheduleWeekProps) {
             <Card.Text>
                 {games.map((game, i) => (
                     <div key={i}>
-                        {game.home} ({game.homeScore}) vs {game.away} ({game.awayScore})
+                        {game.home} ({game.homeScore}) vs ({game.awayScore}) {game.away} 
                     </div>
                 ))}
             </Card.Text>

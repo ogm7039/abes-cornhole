@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react";
+import StandingsEntry from "./standingsEntry";
 
 export default function Standings() {
     const standingsData = [
@@ -12,7 +12,31 @@ export default function Standings() {
         {id: 0, name: "Team Six", wins: 1, losses: 2, points: 4},
     ]
 
+    const sortedStandings = [...standingsData].sort((a, b) => b.points - a.points);
+
     return(
-        <div> Standings </div>
+        <div>
+        <h2 className="text-center mb-4">Standings</h2>
+            <table className="table table-striped table-fixed">
+                <thead>
+                    <tr>
+                        <th className="text-center w-10">
+                            Team
+                        </th>
+                        <th className="text-center w-10">
+                            Record
+                        </th>
+                        <th className="text-center w-10">
+                            Points 
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {sortedStandings.map((team, index) => (
+                        <StandingsEntry key={index} {...team} />
+                    ))}
+                </tbody>
+            </table>
+        </div>
     );
 }
